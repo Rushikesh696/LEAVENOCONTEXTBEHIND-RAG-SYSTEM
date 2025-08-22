@@ -50,13 +50,19 @@ Synthesizes accurate, context-aware answers using an LLM
 
 mermaid
 graph TD
-    A[PDF Paper] --> B[LangChain PDF Loader]
-    B --> C[Recursive Text Splitter]
-    C --> D[Hugging Face Embeddings]
-    D --> E[Chroma Vector Store]
-    F[User Query] --> G[Retriever (Top-k Chunks)]
-    G --> H[Custom Prompt + Flan-T5]
-    H --> I[Answer Synthesized]
+A[PDF Paper] --> B[LangChain PDF Loader]
+    
+B --> C[Recursive Text Splitter]    
+
+C --> D[Hugging Face Embeddings]
+
+D --> E[Chroma Vector Store]
+
+F[User Query] --> G[Retriever (Top-k Chunks)]
+
+G --> H[Custom Prompt + Flan-T5]
+
+H --> I[Answer Synthesized]
 
 Key Implementation Highlights
 
